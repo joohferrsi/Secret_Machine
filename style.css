@@ -1,0 +1,646 @@
+@font-face {
+  font-family: 'Oregano';
+  src: url(oregano.regular.ttf);
+}
+
+@font-face {
+  font-family: 'Rock Salt';
+  src: url(RockSalt.ttf);
+}  
+
+body{
+  background-color: black; 
+  width: 1920px;
+  height: 1080px;
+}
+
+textarea {
+  resize: none;
+}
+
+#title {
+  position: absolute;
+  font-size: 95px;
+  font-family: 'Rock Salt';
+  color: #6238A8;
+  top: 59px;
+  bottom: 849px;
+  left: 26px;
+  right: 981px;
+}
+
+#subWrite {
+  font-family: 'Oregano';
+  position: absolute;
+  font-size: 60px;
+  color: white;
+  left: 268px;
+  right: 1223px;
+  top: 238px;
+  bottom: 765px;
+}
+
+#subResult {
+  font-family: 'Oregano';
+  position: absolute;
+  font-size: 60px;
+  color: white;
+  left: 1288px;
+  right: 310px;
+  top: 59px;
+  bottom: 953px;
+}
+
+#texto {
+  font-family: 'Oregano';
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  width: 672px;
+  height: 599px;
+  left: 146px;
+  right: 1102px;
+  top: 302px;
+  bottom: 179px;
+  background: #291246;
+  border-radius: 50px;
+  border-style: none;
+  align-items: center;
+  align-self:center;
+  text-align: center;
+}
+
+#textoFinal {
+  border-color:black;
+  font-family: 'Oregano';
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  width: 908px;
+  height: 557px;
+  left: 960px;
+  top: 122px;
+  background: #291246;
+  border-radius: 50px;
+  border-style: none;
+  align-items: center;
+  align-self:center;
+  text-align: center;
+}
+
+#code,#decode {
+  font-family: 'Oregano';
+  font-size: 55px;
+  color: #000000;
+  width: 260px;
+  height: 70px;
+  background: #6D42B4;
+  border-radius: 50px;
+  position: absolute;
+  top: 934px;
+  bottom: 76px;
+}
+
+#copy {
+  font-family: 'Oregano';
+  font-size: 55px;
+  color: #000000;  
+  width: 400px;
+  height: 70px;
+  top: 810px;
+  bottom: 198px;
+  left: 1214px;
+  right: 306px;
+  position: absolute;
+  background: #6D42B4;
+  border-radius: 50px;
+}
+
+#code {
+  position: absolute;
+  left: 207px;
+  right: 1453px;
+}
+
+#decode {
+  position: absolute;
+  left: 543px;
+  right: 1117px;
+}
+
+#final {
+  position: absolute;
+  left: 1324px;
+  top: 979px;
+  font-family: 'Oregano';
+  font-size: 50px;
+  color: #352449;
+}
+
+#alura {
+  position: absolute;
+  width: 140px;
+  height: 125px;
+  left: 1537px;
+  top: 934px;
+  border-radius: 100%;
+  background-image: url(ALURA.svg);
+  background-size:cover;
+}
+
+#one {
+  position: absolute;
+  width: 137px;
+  height: 125px;
+  left: 1742px;
+  top: 934px;
+  border-radius: 100%;
+  background-image: url(ONE.svg);
+  background-size:cover;
+}
+
+button:hover {
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+.header,#final,#textoFinal:hover{
+  cursor: default;
+}
+
+#textoFinal::selection {
+  border-style: none;
+  outline-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ @media screen and (max-height:1024px) {
+
+  body {
+    width: 1440px;
+    height: 1024px;
+  }
+
+  #title {
+    position: absolute;
+    font-size: 75px;
+    top: 25px;
+    bottom: 820px;
+    left: 49px;
+    right: 670px;
+  }
+  
+  #subWrite {
+    position: absolute;
+    font-size: 40px;
+    left: 212px;
+    right: 942px;
+    top: 225px;
+    bottom: 747px;
+  }
+  
+  #subResult {
+    position: absolute;
+    font-size: 40px;
+    left: 968px;
+    right: 287px;
+    top: 145px;
+    bottom: 827px;
+  }
+  
+  #texto {
+    position: absolute;
+    font-size: 40px;
+    height: 518px;
+    width: 480px;
+    left: 128px;
+    right: 832px;
+    top: 277px;
+    bottom: 229px;
+    border-radius: 50px;
+  }
+  
+  #textoFinal {
+    position: absolute;
+    font-size: 40px;
+    height: 518px;
+    width: 662px;
+    left: 730px;
+    right: 48px;
+    top: 197px;
+    bottom: 309px;
+    border-radius: 50px;    
+  }
+  
+  #code,#decode {
+    position: absolute;
+    font-size: 40px;
+    height: 65px;
+    width: 273px;
+    top: 842px;
+    bottom: 117px;
+    border-radius: 50px;
+    
+  }
+  
+  #copy {
+    position: absolute;
+    font-size: 40px;
+    height: 65px;
+    width: 333px;
+    left: 894px;
+    right: 213px;
+    top: 762px;
+    bottom: 197px;
+    border-radius: 50px;    
+  }
+  
+  #code {
+    position: absolute;
+    left: 95px;
+    right: 1072px;
+  }
+  
+  #decode {
+    position: absolute;
+    left: 393px;
+    right: 774px;
+  }
+  
+  #final {
+    position: absolute;
+    left: 992px;
+    top: 929px;
+    font-size: 32px;
+  }
+  
+  #alura {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 1153px;
+    top: 888px;    
+    border-radius: 100%;
+    background-size:cover;
+  }
+  
+  #one {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 1278px;
+    top: 880px;    
+    border-radius: 100%;
+    background-size:cover;
+  }}
+
+  @media (max-width: 768px) and (orientation: portrait) {
+
+    body { 
+      position: relative;
+      display: inline-block;
+      width: 768px;
+      height: 1024px;
+  }
+  
+    #title {
+      position: relative;
+      font-size: 70px;
+      left: 54px;
+      top: 9px;
+    }
+    
+    #subWrite {
+      font-size: 40px;
+      height: 46px;
+      width: 301px;
+      left: 240px;
+      top: 158px;
+    }
+    
+    #subResult {
+      position: absolute;
+      font-size: 40px;
+      left: 282px;
+      top: 514px;
+    }
+    
+    #texto {
+      position: absolute;
+      font-size: 35px;
+      width: 687px;
+      height: 186px;
+      left: 42px;
+      top: 214px;
+      border-radius: 25px;
+      display: block;
+    }
+    
+    #textoFinal {
+      position: absolute;
+      font-size: 35px;
+      width: 687px;
+      height: 268px;
+      left: 41px;
+      top: 563px;
+      border-radius: 25px;
+      display: block;  
+    }
+    
+    #code,#decode {
+      position: absolute;
+      font-size: 40px;
+      width: 198px;
+      height: 66px;
+      top: 430px;
+      bottom: 534px;
+      border-radius: 50px;
+      display: inline; 
+    }
+    
+    #copy {
+      position: absolute;
+      font-size: 40px;
+      width: 300px;
+      height: 55px;
+      left: 234px;
+      top: 860px;
+      border-radius: 50px;
+      display: block;    
+    }
+    
+    #code {
+      position: absolute;
+      left: 113px;
+      right: 405px;
+      display: inline;
+    }
+    
+    #decode {
+      position: absolute;
+      left: 424px;
+      right: 94px;
+      display: inline;
+    }
+    
+    #final {
+      position: absolute;
+      left: 424px;
+      top: 959px;
+      font-size: 32px;
+    }
+    
+    #alura {
+      position: absolute;
+      width: 78px;
+      height: 71px;
+      left: 573px;
+      top: 941px;
+      border-radius: 100%;
+      background-size:cover;
+    }
+    
+    #one {
+      position: absolute;
+      width: 78px;
+      height: 71px;
+      left: 671px;
+      top: 935px;      
+      border-radius: 100%;
+      background-size:cover;
+    }}
+    
+     @media (max-height:640px) and (orientation: portrait){
+
+      body { 
+        height: 640px;
+        width: 360px;        
+    }
+    
+      #title {
+        position: relative;
+        left: 12px;
+        top: 6px;
+        font-size: 32px;
+      }
+      
+      #subWrite {
+        position: absolute;
+        left: 88px;
+        top: 90px;
+        font-size: 25px;   
+      }
+      
+      #subResult {
+        height: 35px;
+        width: 124px;
+        left: 117px;
+        top: 320px;        
+        font-size: 25px;
+      }
+      
+      #texto {
+        position: absolute;
+        height: 126px;
+        width: 323px;
+        left: 18px;
+        top: 125px;
+        border-radius: 25px;
+        font-size: 25px;       
+        display: block;
+      }
+      
+      #textoFinal {
+        position: absolute;
+        font-size: 25px;
+        height: 149px;
+        width: 323px;
+        left: 18px;
+        top: 355px;
+        border-radius: 25px;
+        display: block;  
+      }
+      
+      #code,#decode {
+        position: absolute;
+        font-size: 30px;
+        height: 45px;
+        width: 152px;
+        top: 259px;
+        bottom: 336px;
+        border-radius: 50px;
+        display: inline; 
+      }
+      
+      #copy {
+        position: absolute;
+        font-size: 30px;
+        height: 45px;
+        width: 186px;
+        left: 86px;
+        top: 522px;
+        border-radius: 50px;
+        display: block;    
+      }
+      
+      #code {
+        position: absolute;
+        left: 18px;
+        right: 190px;
+        display: inline;
+      }
+      
+      #decode {
+        position: absolute;
+        left: 189px;
+        right: 19px;
+        display: inline;
+      }
+      
+      #final {
+        position: absolute;
+        left: 119px;
+        top: 602px;
+        font-size: 20px;
+      }
+      
+      #alura {
+        position: absolute;
+        height: 40px;
+        width: 44px;
+        left: 233px;
+        top: 589px;
+        border-radius: 100%;
+        background-size:cover;
+      }
+      
+      #one {
+        position: absolute;
+        height: 40px;
+        width: 43px;
+        left: 306px;
+        top: 589px;              
+        border-radius: 100%;
+        background-size:cover;
+      }}
+
+      @media (min-height:480px) and (max-width:322px) {
+
+        body {
+          width: 322px;
+          height: 480px;        
+      }
+      
+        #title {
+          position:relative;
+          left: 3px;
+          top: 5px;
+          font-size: 30px;
+          text-align: center;
+        }
+        
+        #subWrite {
+          position:absolute;
+          left: 83px;
+          top: 60px;
+          font-size: 20px;   
+        }
+        
+        #subResult {
+          position:absolute;
+          font-size: 20px;
+          left: 103px;
+          top: 232px;
+        }
+        
+        #texto {
+          position:absolute;
+          height: 89px;
+          width: 289px;
+          left: 17px;
+          top: 91px;
+          border-radius: 25px;          
+          font-size: 20px;
+        }
+        
+        #textoFinal {
+          position:absolute;
+          font-size: 20px;
+          height: 106px;
+          width: 289px;
+          left: 17px;
+          top: 260px;
+          border-radius: 25px;  
+        }
+        
+        #code,#decode {
+          position:absolute;
+          font-size: 25px;
+          width: 130px;
+          height: 32px;
+          top: 191px;
+          bottom: 257px;
+        }
+        
+        #copy {
+          position:absolute;
+          font-size: 25px;
+          width: 158px;
+          height: 32px;
+          left: 82px;
+          top: 377px;
+          border-radius: 50px;   
+        }
+        
+        #code {
+          position:absolute;
+          left: 17px;
+          right: 175px;
+        }
+        
+        #decode {
+          position:absolute;
+          left: 177px;
+          right: 16px;
+        }
+        
+        #final {
+          position:absolute;
+          left: 17px;
+          top: 446px;
+          font-size: 20px;
+        }
+        
+        #alura {
+          position:absolute;
+          display: inline;
+          height: 42px;
+          width: 45px;
+          left: 261px;
+          top: 429px;                  
+          border-radius: 100%;
+          background-size:cover;
+        }
+        
+        #one {
+          position:absolute;
+          display: inline;
+          height: 42px;
+          width: 44px;
+          left: 177px;
+          right: 101px;
+          top: 429px;
+          bottom: 9px;
+          border-radius: 100%;
+          background-size:cover;
+        }}
+
+      

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Secret Machine</title>
+</head>
+<body>
+  <div class="header">
+    <h1 id="title"> Secret Machine </h1>
+    <h4 id="subWrite"> Máquina de Escrever </h4>
+    <h4 id="subResult"> Seu Resultado </h4>
+  </div>
+
+  <div class="content">
+    <section class="containers">
+      <textarea id="texto" placeholder="O texto deve conter apenas letras minúsculas e não conter acentos ou caracteres especiais."></textarea>
+      <textarea id="textoFinal" placeholder=" O resultado foi. " readonly></textarea>
+    </section>
+    <section class="buttons">
+      <button id="code"> Codifique </button>
+      <button id="decode"> Decodifique </button>
+      <button id="copy"> Copiar o texto </button>
+    </section>
+  </div>
+
+  <div class="footer">
+    <h5 id="final"> Desafio by: </h5>
+    <button id="alura"></button>
+    <button id="one"></button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
